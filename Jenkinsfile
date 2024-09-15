@@ -9,7 +9,7 @@ pipeline {
       }
       stage ('test'){
         steps{
-            sh 'echo Noumbou'
+            sh 'echo test'
         }
       }
     }
