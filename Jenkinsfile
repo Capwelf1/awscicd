@@ -6,7 +6,7 @@ pipeline {
     BRANCH_NAME = 'main'
     GIT_URL = 'https://github.com/Capwelf1/awscicd.git'
     IMAGE_TAG = 'Capwelf1/awscicd'
-    IMAGE_VERSION = $"{BUILD_NUMBER}"
+    IMAGE_VERSION = "${BUILD_NUMBER}"
   }
     stages {
       stage('git checkout'){
