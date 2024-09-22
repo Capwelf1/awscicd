@@ -12,9 +12,10 @@ pipeline {
       git branch: "${BRANCH_NAME}", url: "${GIT_URL}"
         }
       }
-      stage ('test'){
+      stage ('docker build'){
         steps{
-            sh 'echo test'
+            sh 'docker build -t awscicd .'
+            sh 'docker images'
         }
       }
     }
