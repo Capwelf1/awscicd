@@ -1,9 +1,9 @@
 pipeline {
   agent any
     stages {
-      stage('build'){
+      stage('git checkout'){
         steps{
-            sh 'echo build for Delano'
+      git branch: 'main', url: 'https://github.com/Capwelf1/awscicd.git'    
       
         }
       }
